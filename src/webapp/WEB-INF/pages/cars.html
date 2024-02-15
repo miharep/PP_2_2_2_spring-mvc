@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cars</title>
+    </head>
+    <body>
+    <h2>Table of Cars</h2>
+
+    <table style="border-collapse: collapse" >
+        <tr th:each="car : ${carsList}" >
+            <td th:text = "${car.toString()}" style="border: 1px solid; padding: 10px; " >carToStringText</td>
+        </tr>
+    </table>
+    </body>
+</html>
